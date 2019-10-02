@@ -2,10 +2,10 @@
 <?php
 
     function ft_split($str) {
-        $word = preg_split("/ +/", trim($str));
-        sort($word);
-        if (!count($word) || !$word[0])
+        $words = preg_split("/ +/", trim($str));
+        sort($words);
+        if (!count($words) || !$words[0])
             return(NULL);
-        return ($word);
+        return ($words);
     }
 ?>
