@@ -21,21 +21,25 @@
                         <img src="resources/loupe.png" width="220" height="125">
                     </div>
                     <div class="resources">
-                        <img src="resources/reload.png" width="20" height="20"></li>
-                        <img src="resources/close.gif" width="20" height="20"></li>
+                        <a href="https://www.disney.com"><img src="resources/reload.png" width="20" height="20"></a>
+                        <a href="https://www.relaischateaux.com"><img src="resources/close.gif" width="20" height="20"></a>
                     </div>
                 </div>
             </div>
             <div class="content">
                 <div class="source">
-                    <img src="resources/arrow.png" class="icons">
-                    <img src="resources/main.png" class="icons">
-                    <img src="resources/oeil.png" class="icons">
-                    <img src="resources/outil.png" class="icons">
-                    <img src="resources/chat-icon.png" class="icons">
+                    <img src="resources/arrow.png" class="icons" title="Advance">
+                    <img src="resources/main.png" class="icons" title="Take">
+                    <img src="resources/oeil.png" class="icons" title="Look">
+                    <img src="resources/outil.png" class="icons" title="Use">
+                    <img src="resources/chat-icon.png" class="icons" title="Speak">
                 </div>
                 <div class="photo">
-                    <img src="resources/cluster.jpg" width="1000" height="615" class="cluster">
+                    <img src="resources/cluster.jpg" width="1000" height="615" class="cluster" usemap="#map">
+                    <map name="map">
+                        <area shape="rect" coords="350,370, 450,600" href="https://www.ikea.com">
+                        <area shape="rect" coords="800,350, 1000,500" href="https://www.apple.com">
+                    </map>
                 </div>
                 <div class="source">
                     <img src="resources/book.png" class="icons">
@@ -44,11 +48,14 @@
                 </div>
             </div>
             <div class="Repondere">
-                <p>Vous <span style="font-size: 30px">entrez</span> alors dans une grande piece remplie<br>
+                <p>Vous <span style="font-size: 32px; font-family: Georgia, serif; font-weight: lighter">entrez</span> alors dans une grande piece remplie<br>
                     d'<span style="text-shadow: 5px 5px 5px red">ordinateurs</span>...<br>
-                    <span style="font-style: italic">- Bonjour, vous êtеs nouveau ici ?</span></p>
-                <input type="text" name="username" id="inp" size="5">
-                <input class="button" type="reset" value="Repondre">
+                    <span style="font-style: italic">- Bonjour, vous êtes nouveau ici ?</span>
+                </p>
+                <form>
+                    <input type="text" name="field">
+                    <input type="submit" name="send"value="Repondre">
+                </form>
             </div>
         </div>
     </header>

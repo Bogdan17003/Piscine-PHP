@@ -1,4 +1,3 @@
-
 <?php
 
     function ft_split($str) {

@@ -32,13 +32,9 @@ body {
 }
 
 .resources{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
-}
-
-.resources img:nth-child(2)
-{
-    padding-top: 56px;
 }
 
 .content
@@ -98,13 +94,13 @@ body {
 
 .content .source:nth-child(3) .icons:nth-child(1)
 {
-    height: 80px;
-    width: 60px;
+    height: 100px;
+    width: 65px;
 }
 .content .source:nth-child(3) .icons:nth-child(2)
 {
     height: 50px;
-    width: 60px;
+    width: 67px;
 }
 
 .brick
@@ -128,24 +124,24 @@ body {
 
 .Repondere p
 {
-    font-size: 19px;
+    font-size: 17px;
     padding: 15px 0px 0px 10px;
     font-family: sans-serif;
+    letter-spacing: 0.65px;
 }
 
-input
-{
-    margin-left: 15px;
-}
-
-#inp
-{
-    border: 3px inset;
-    outline: red;
+form input[type=text] {
     width: 380px;
+    height: 14px;
+    margin-left: 13px;
+    margin-top: 3px;
+    border: 3px inset;
 }
 
-.button
-{
-    margin-left: 5px;
+form input[type=submit] {
+    margin-left: 4px;
+    border-radius: 1px;
+    font-size: 13px;
+    background: linear-gradient(#f0f0f0, #dcdcdc);
+    border: solid grey 1px;
 }
