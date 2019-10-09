@@ -1,0 +1,27 @@
+<- Vertex ----------------------------------------------------------------------
+Vertex class can be used for setting the coordinates of some point.
+
+It requires 3 main parameters for doing that:
+    Its x axis coordinate;
+    Its y axis coordinate;
+    Its z depth coordinate;
+
+There are also two optional parameters:
+    'w' - homogeneous coordinate, that is usually used in projective geometry.
+        The default value of 'w' is 1.00.
+    'color' - sets the color of the vertex using class Color.
+        Could be passed either as array, or as a Color instance.
+        Default value of 'color' is 'white'
+
+The class provides the following methods :
+    x getX() : returned value of x.
+    y getY() : returned value of y.
+    z getZ() : returned value of z.
+    w getY() : returned value of w.
+    color getColor() : returned value of color.
+    setX(X $_x) : set in x new value _x.
+    setY(Y $_y) : set in y new value _y.
+    setZ(Z $_z) : set in z new value _z.
+    setW(W $_w) : set in w new value _w.
+    setColor(Color $_color) : set in color new value _color.
+---------------------------------------------------------------------- Vertex ->
