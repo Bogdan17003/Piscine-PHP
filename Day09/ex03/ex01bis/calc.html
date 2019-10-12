@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input  id="input1">
+    <select id="ident">
+        <option>+</option>
+        <option>-</option>
+        <option>*</option>
+        <option>/</option>
+        <option>%</option>
+    </select>
+    <input id="input2">
+    <button id="button">Try me!</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script>
+        jQuery('document').ready(function () {
+            jQuery('#button').on('click', result);
+        });
+
+        function aler () {
+            alert("Please, use me...");
+        }
+
+        setInterval(aler, 30000);
+
+        function result() {
+            let value1;
+            let value2;
+            let znak;
+            let result;
+
+            let val1 = jQuery('#input1').val();
+            let val2 = jQuery('#input2').val();
+            value1 = parseInt(val1);
+            value2 = parseInt(val2);
+            znak = jQuery('#ident').val();
+            if (value1 >= 0 && value2 >= 0 && /^\d+$/.test(val1) && /^\d+$/.test(val2)) {
+                if (znak === '+')
+                    result = value1 + value2;
+                else if (znak === '-')
+                    result = value1 - value2;
+                else if (znak === '*')
+                    result = value1 * value2;
+                else if (znak === '/') {
+                    if (value2 !== 0)
+                        result = value1 / value2;
+                    else
+                        result = "It’s over 9000!";
+                }
+                else if (znak === '%') {
+                    if (value2 !== 0)
+                        result = value1 / value2;
+                    else
+                        result = "It’s over 9000!";
+                }
+                alert(result);
+                console.log(result);
+            }
+            else {
+                alert('Error :(');
+                console.log('Error :(');
+            }
+
+        }
+    </script>
+</body>
+</html>

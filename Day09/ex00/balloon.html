@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BALLOON</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+        #balloon {
+            background: red;
+            height: 200px;
+            width: 200px;
+            border-radius: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="balloon">  </div>
+
+    <script>
+        let arr = ["red", "green", "blue"];
+        let i = 0;
+        let circle = document.getElementById('balloon');
+        circle.onclick = main;
+
+        function main() {
+            size();
+            color();
+        }
+
+        circle.onmouseleave = reverse;
+
+        function size() {
+            let width = parseInt(circle.clientWidth, 10);
+            let height = parseInt(circle.clientHeight, 10);
+            width += 10;
+            height += 10;
+            if (width > 420 || height > 420) {
+
+                setTimeout(standartcircle, 1000);
+            }
+            else {
+                circle.style.width = width + 'px';
+                circle.style.height = height + 'px';
+            }
+        }
+
+        function color() {
+            i++;
+            if (i > 2)
+                i = 0;
+            circle.style.backgroundColor = arr[i];
+        }
+
+        function reverse() {
+            let width = parseInt(circle.clientWidth, 10);
+            let height = parseInt(circle.clientHeight, 10);
+            width -= 5;
+            height -= 5;
+            if (width < 200 || height < 200)
+                standartcircle();
+            else {
+                circle.style.width = width + 'px';
+                circle.style.height = height + 'px';
+            }
+            i--;
+            if (i < 0)
+                i = 2;
+            circle.style.backgroundColor = arr[i];
+        }
+
+        function standartcircle() {
+            circle.style.width = '200px';
+            circle.style.height = '200px';
+        }
+    </script>
+</body>
+</html>
