@@ -1,0 +1,13 @@
+<?php
+function auth($login, $passwd)
+{
+    if (!$login || !$passwd )
+        return (false);
+    $old_passwd_login = unserialize(file_get_contents("../private/passwd"));
+    if ($old_passwd_login)
+        foreach ($old_passwd_login as $key => $value)
+            if ($value['login'] == $login && $value['passwd'] == hash('whirlpool', $passwd))
+                return (true);
+    return (false);
+}
+?>
