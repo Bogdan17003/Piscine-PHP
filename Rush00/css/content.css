@@ -1,0 +1,69 @@
+h2 {
+    display: inline;
+}
+
+.way {
+    margin: 20px 0px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.product {
+    display: flex;
+    min-width: 400px;
+    width: 33%;
+}
+
+.descriptio {
+    background: #b0b0b0;
+    height: 300px;
+    width: 200px;
+    text-align: center;
+}
+
+.description {
+    display: none;
+    background: #b0b0b0;
+    height: 300px;
+    width: 200px;
+    text-align: center;
+}
+
+.product:hover .description {
+   display: block;
+}
+
+.basket {
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 3px;
+    width: 50%;
+    padding: 15px 0;
+    border: 1px solid darkred;
+    background: #f5cf78;
+    color: black;
+}
+
+.actionss {
+    margin-top: 50px;
+}
+
+.buy {
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 3px;
+    width: 300px;
+    padding: 15px 0;
+    border: 1px solid darkred;
+    background: #f5cf78;
+    color: black;
+}
+
+.knopka {
+    text-align: center;
+    margin-bottom: 50px;
+}

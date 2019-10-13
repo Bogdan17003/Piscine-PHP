@@ -1,0 +1,176 @@
+h1, body, form, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+    color: black;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 20px 0px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a  {
+    color: #000;
+    text-decoration: none;
+}
+
+.buttons a  {
+    padding: 0px 30px;
+}
+
+.login {
+    margin: 0 30px 0 20px;
+}
+
+.login .menu {
+    width: 100%;
+    margin: 0 20px;
+}
+
+.buttons p, .login, .logout, .baske {
+    display: inline-block;
+}
+
+.navigation {
+    background: #b0b0b0;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 0px;
+    width: 20%;
+    padding: 15px 0;
+    border: 0;
+    background: transparent;
+    color: black;
+}
+
+.baske .menu:hover, .login .menu:hover{
+    background: 0;
+}
+
+.menu:hover {
+    background: #7a7a7a;
+}
+
+.actions a{
+    display:block;
+    padding:0 30px;
+    line-height: 60px;
+    text-decoration:none;
+}
+
+.choose {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+}
+
+.black
+{
+    display: none;
+    opacity: 0.75;
+    height: 630px;
+    background: black;
+}
+
+.image {
+    cursor: pointer;
+    width: 50%;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background: black;
+}
+
+.men, .women {
+    height: 630px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.men h1, .women h1 {
+    font-size: 30px;
+    padding-top: 270px;
+    display: none;
+}
+
+.image:hover .men, .image:hover .women{
+    opacity: 0.25;
+}
+
+.image:hover h1, .image:hover h1{
+    display: block;
+}
+
+.women {
+    background: url("../Rush00-assets/women.jpeg") no-repeat center top / cover;
+
+}
+
+.men {
+    background: url("../Rush00-assets/man.jpeg") no-repeat center top / cover;
+}
+
+.dignity {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #b0b0b0;
+}
+
+.dignity_one, .dignity_two, .dignity_three {
+    width: 33%;
+}
+
+.dignity_two {
+    margin: 0% 3%;
+}
+
+.firms {
+    margin: 60px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer {
+    background: #b0b0b0;
+}
+
+.bottom{
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.baske .menu {
+    height: 100%;
+    width: 100%;
+}
